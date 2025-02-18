@@ -21,6 +21,9 @@ A dynamic React application implemented using SUPERFLEX AI featuring an animated
   - Overcame Demo (Custom Font)
   - Inter (System Font)
 
+## UI Design 
+figma: https://www.figma.com/design/JASeD8Oy2LEIL5GqRqdtKD/superflex?node-id=0-1&t=nduJmlK1PDhhnZyf-1
+
 ## Getting Started
 
 1. Clone the repository
