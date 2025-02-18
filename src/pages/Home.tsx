@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Home({ setUsername }: { setUsername: (name: string) => void }) {
   const [inputValue, setInputValue] = useState('');
+  const navigate = useNavigate();
 
   const handleConfirm = () => {
     if (!inputValue) return;
     setUsername(inputValue);
+    navigate('/dashboard'); // Navigate to dashboard after setting username
   };
 
   return (

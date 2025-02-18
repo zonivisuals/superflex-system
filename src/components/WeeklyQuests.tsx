@@ -24,7 +24,7 @@ export default function WeeklyQuests({ onProgressChange }: { onProgressChange: (
         ? prev.filter((id) => id !== taskId)
         : [...prev, taskId];
 
-      // Calculate progress
+      // Calculate and round progress
       const progress = Math.round((newCheckedTasks.length / tasks.length) * 100);
       onProgressChange(progress);
 
@@ -35,7 +35,7 @@ export default function WeeklyQuests({ onProgressChange }: { onProgressChange: (
   return (
     <div className="relative w-[390px] mr-32 mt-2">
       {/* Gradient Background */}
-      <div className=" absolute inset-0 bg-gradient-to-br from-transparent to-[rgba(255,255,255,0.1)]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent to-[rgba(255,255,255,0.1)]" />
 
       {/* Content Container */}
       <div className="relative h-full p-6 flex flex-col gap-6">
@@ -44,8 +44,9 @@ export default function WeeklyQuests({ onProgressChange }: { onProgressChange: (
           <h1 className="text-3xl text-white mb-2">
             weekly quests
           </h1>
-          <span id="inter" className="text-3xl font-semibold text-white">+</span>
-
+          <span id='inter' className="text-3xl font-semibold text-white">
+            +
+          </span>
         </div>
 
         {/* Separator Line */}

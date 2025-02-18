@@ -25,7 +25,7 @@ export default function Navbar() {
         </div>
 
         {/* Right Button */}
-        <AnimateButton text="Button" />
+        <AnimateButton text="Click me" />
 
         {/* Mobile Menu Button */}
         <button
