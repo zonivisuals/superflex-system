@@ -10,14 +10,14 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-10 min-h-full">
+    <div className="flex flex-col items-center justify-center gap-12 min-h-full">
       
-      <div className='flex flex-col items-center justify-center gap-6'>
+      <div className='flex flex-col items-center justify-center gap-5'>
         <h1 id='italic' className="text-5xl normal italic">
           welcome to the system
         </h1>
 
-        <p className="text-2xl">
+        <p className="text-xl">
           please type a username
         </p>
       </div>

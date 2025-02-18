@@ -5,11 +5,13 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Footer from './components/Footer'
+import Particles from './components/Particles';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <Particles/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
