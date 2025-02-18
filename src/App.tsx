@@ -10,8 +10,8 @@ import Particles from './components/Particles';
 function App() {
   return (
     <BrowserRouter>
+    <Particles/>
       <div className="App">
-        <Particles/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
