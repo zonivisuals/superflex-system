@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 *{
-  background-color: #1E0629;
   margin: 0;
   padding: 0;
   font-family: "Overcame Demo";
@@ -12,7 +11,16 @@
 }
 
 .App{
-  height: 77vh;
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  background: url('./assets/background.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  }
+  
+  #nav-elements{
+    padding: 2rem;
 }
 
 #inter{
@@ -45,4 +53,32 @@
   src: url('/public/fonts/OvercameDemoRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+}
+
+/* Clip path to cut opposite corners */
+.clip-path {
+  clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+}
+
+/* Circuit Animation */
+@keyframes circuit {
+  0% {
+    clip-path: inset(0% 100% 100% 0%);
+  }
+  25% {
+    clip-path: inset(0% 0% 100% 0%);
+  }
+  50% {
+    clip-path: inset(0% 0% 0% 100%);
+  }
+  75% {
+    clip-path: inset(100% 0% 0% 100%);
+  }
+  100% {
+    clip-path: inset(100% 100% 0% 0%);
+  }
+}
+
+.animate-circuit {
+  animation: circuit 1.5s linear infinite;
 }
